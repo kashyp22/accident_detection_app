@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ad_app_tm
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# accident_detection_app
+accident_detection app with user and ambulance 
+>>>>>>> b083b1022f8f75cae1ae2a3ee03e666539170a3d
