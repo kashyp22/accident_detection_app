@@ -6,6 +6,7 @@ import 'package:ad_app_tm/ambulance/view_notification.dart';
 import 'package:ad_app_tm/ambulance/view_profile.dart';
 import 'package:ad_app_tm/user/send_complaint.dart';
 import 'package:ad_app_tm/user/send_feedback_rating.dart';
+import 'package:ad_app_tm/user/user_cp.dart';
 import 'package:ad_app_tm/user/view_ambulance.dart';
 import 'package:ad_app_tm/user/view_complaint.dart' show user_view_complaint;
 import 'package:ad_app_tm/user/view_nearest_accident.dart' show ViewNearestAccident, view_nearest_accident;
@@ -202,6 +203,19 @@ class _UserHomeState extends State<UserHome> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => ViewNearestAccident())
+                        );
+                      },
+                    ),
+
+                    _buildMenuCard(
+                      context,
+                      icon: Icons.password,
+                      title: "Password",
+                      color: Colors.green,
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => UserChangePassword())
                         );
                       },
                     ),

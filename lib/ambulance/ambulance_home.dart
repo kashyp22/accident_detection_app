@@ -868,6 +868,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:ad_app_tm/ambulance/ambu_near_accidents.dart';
+import 'package:ad_app_tm/ambulance/cp.dart';
 import 'package:ad_app_tm/ambulance/edit_profile.dart';
 import 'package:ad_app_tm/ambulance/send_complaint.dart';
 import 'package:ad_app_tm/ambulance/view_complaint.dart';
@@ -1383,15 +1384,6 @@ class _AmbulanceHomeState extends State<AmbulanceHome> {
           MaterialPageRoute(builder: (context) => ViewNearestHospital()),
         ),
       ),
-      // MenuItemData(
-      //   "Notifications",
-      //   Icons.notifications_active,
-      //   Colors.orange,
-      //       () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (context) => viewnotificationpagePage(title: '')),
-      //   ),
-      // ),
       MenuItemData(
         "My Profile",
         Icons.person,
@@ -1419,6 +1411,18 @@ class _AmbulanceHomeState extends State<AmbulanceHome> {
           MaterialPageRoute(builder: (context) => complaint()),
         ),
       ),
+
+
+      MenuItemData(
+        "Password",
+        Icons.notifications_active,
+        Colors.orange,
+            () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => amb_cp()),
+        ),
+      ),
+
     ];
 
     return Padding(

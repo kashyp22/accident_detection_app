@@ -352,8 +352,10 @@ class _ambu_ViewNearestAccidentState extends State<ambu_ViewNearestAccident> {
                   const SizedBox(height: 8),
 
                   /// 🔹 NAVIGATION BUTTONS
-                  Row(
+                  if (accident['status'] != "completed")
+                    Row(
                     children: [
+
                       Expanded(
                         child: ElevatedButton.icon(
                           icon: const Icon(Icons.location_on),
@@ -374,7 +376,8 @@ class _ambu_ViewNearestAccidentState extends State<ambu_ViewNearestAccident> {
                         ),
                       ),
                       const SizedBox(width: 10),
-                      Expanded(
+
+                        Expanded(
                         child: ElevatedButton.icon(
                           icon: const Icon(Icons.local_hospital),
                           label: const Text("Hospital"),
